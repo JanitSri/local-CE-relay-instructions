@@ -27,7 +27,7 @@ The main goal is to inspect the currently opened C++ file in your local Compiler
 
 ---
 
-# 1. Install Compiler Explorer locally and start 
+## 1. Install Compiler Explorer locally and start 
 
 ```bash
 
@@ -45,7 +45,7 @@ http://localhost:10240
 
 ---
 
-# 2. Verify your compilers
+## 2. Verify your compilers
 
 Check which GCC and Clang versions are installed:
 
@@ -70,7 +70,7 @@ For example:
 
 ---
 
-# 3. Configure local GCC and Clang in Compiler Explorer
+## 3. Configure local GCC and Clang in Compiler Explorer
 
 ```bash
 compiler-explorer/etc/scripts/ce-properties-wizard/run.sh <compiler-location>
@@ -84,13 +84,13 @@ curl -s http://localhost:10240/api/compilers/c++
 
 ---
 
-# 4. Generate `compile_commands.json`
+## 4. Generate `compile_commands.json`
 
 Your project needs a compilation database so the helper script knows the real flags used by your build.
 
 ---
 
-# 5. Retrieve the Compiler Explorer helper scripts
+## 5. Retrieve the Compiler Explorer helper scripts
 
 Retrieve `ce-open.py` and `ce-tab.py`
 
@@ -104,7 +104,7 @@ COMPILER_ID = os.environ.get(
 
 ---
 
-# 6. Start the reusable tab relay script 
+## 6. Start the reusable tab relay script 
 
 Run:
 
@@ -146,7 +146,7 @@ The second tab will be reused every time you invoke the VS Code shortcut.
 ---
 
 
-# 7. Configure the VS Code task
+## 7. Configure the VS Code task
 
 Inside your project create:
 
@@ -186,7 +186,7 @@ The `tasks.command` value needs to be updated to the location of your ce-open.py
 
 ---
 
-# 8. Add the keyboard shortcut [optional]
+## 8. Add the keyboard shortcut [optional]
 
 Open:
 
